@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootdonalds / 4.Funciones</title>
+</head>
+
+<body>
+    <script>
+        let productos = {
+            menus: {
+                'Grand Big Boot': 8.5,
+                'Big Boot': 8,
+                'BootPollo': 7.50,
+                'Cuarto de libra': 7,
+                'BootRoyal Deluxe': 7
+            },
+            burgers: {
+                'Grand Big Boot': 6,
+                'Big Boot': 5.5,
+                'BootPollo': 5,
+                'Cuarto de libra': 4.5,
+                'BootRoyal Deluxe': 4.5
+            },
+            drinks: {
+                'CocaCola': 2,
+                'Fanta': 2,
+                'Agua': 1,
+                'Cerveza': 2.5
+            },
+            fries: 1,
+        };
+
+        alert("MENÚ BOOTDONALDS" + "\n" + "Puede pedir:" + "\n" + "\n" + "- Menú" + "\n" + "- Hamburguesa" + "\n" + "- Bebida" + "\n" + "- Acabar pedido");
+        let pa = prompt("MENÚ BOOTDONALDS" + "\n" + "Puede pedir:" + "\n" + "\n" + "- Menú" + "\n" + "- Hamburguesa" + "\n" + "- Bebida" + "\n" + "- Acabar pedido" + "\n" + "\n" + "¿Qué desea?");
+        let p = pa.toLowerCase();
+        let menus = Object.keys(productos.menus);
+        let burgers = Object.keys(productos.burgers);
+        let drinks = Object.keys(productos.drinks);
+        if(p == "menú" || p == "menu"){
+            let b = prompt("MENÚS:" + "\n" + "\n" + menus[0] + "\n" + menus[1] + "\n" + menus[2] + "\n" + menus[3] + "\n" + menus[4] + "\n" + "\n" + "Elija un menú, por favor:");
+        }
+    </script>
+</body>
+
+</html>

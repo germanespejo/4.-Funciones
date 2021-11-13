@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 05 / 4.Funciones</title>
+</head>
+<body>
+<script>
+    let p = parseInt(prompt("Escribe un número:"));
+    let p2 = parseInt(prompt("Escribe otro número:"));
+    let aux = tamanyo();
+
+    function tamanyo(x = p, y = p2){
+        if((x > y) === true){
+            return console.log("El número " + p + " es más grande.");
+        }else{
+            return console.log("El número " + p + " es más pequeño.");
+        }
+    }
+</script>
+</body>
+</html>

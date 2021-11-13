@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 / 4.Funciones</title>
+</head>
+
+<body>
+    <script>
+        let answer;
+        let p1 = prompt("¿De qué figura quiere calcular el área? (introduzca 'cuadrado', 'círculo' o 'triángulo'):");
+        let p = p1.toLowerCase();
+        while((p != "cuadrado") && (p != "círculo") && (p != "circulo") && (p != "triángulo") && (p != "triangulo")){
+            alert("parámetro introducido incorrecto.");
+            p1 = prompt("¿De qué figura quiere calcular el área? (introduzca 'cuadrado', 'círculo' o 'triángulo'):");
+            p = p1.toLowerCase();
+            }
+        if(p == "cuadrado"){
+            alert(cuadrado());
+        }else if(p == "círculo" || p == "circulo"){
+            alert(circulo());
+        }else if(p == "triángulo" || p == "triangulo"){
+            alert(triangulo());
+        }
+        function cuadrado(){
+            let c = parseInt(prompt("Introduzca el valor de uno de los lados del cuadrado:"));
+            let c2 = Math.trunc(c*c);
+            return answer = "El área del cuadrado es de " + c2 + ".";
+        }
+        function circulo(){
+            let r = parseInt(prompt("Introduzca el valor del radio del círculo:"));
+            let r2 = Math.trunc((r*r)*(3.1416));
+            return answer = "El área del círculo es de " + r2 + ".";
+        }
+        function triangulo(){
+            let b1 = parseInt(prompt("Introduzca el valor de la base del triángulo:"));
+            let b2 = parseInt(prompt("Introduzca el valor de la altura del triángulo:"));
+            let b3 = Math.trunc((b1*b2)/2);
+            return answer = "El área del triángulo es de " + b3 + ".";
+        }
+    </script>
+</body>
+
+</html>

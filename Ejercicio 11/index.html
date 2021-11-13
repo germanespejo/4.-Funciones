@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 / 4.Funciones</title>
+</head>
+
+<body>
+    <script>
+        let answer;
+        let p = parseInt(prompt("¿Cúanto dinero quieres cambiar?"));
+        let p2a = prompt("¿A qué quieres cambiarlo? Introduce dólares, yenes o libras");
+        let p2 = p2a.toLowerCase();
+        if(p2 == "dólares" || p2 == "dolares"){
+            alert(dolares());
+        }else if(p2 == "yenes"){
+            alert(yenes());
+        }else if(p2 == "libras"){
+            alert(libras());
+        }
+        function dolares(){
+            let d = (p*1.28611).toFixed(2);
+            return answer = p + " euro(s) son " + d + " dólar(es).";
+        }
+        function yenes(){
+            let y = (p*129.852).toFixed(2);
+            return answer = p + " euro(s) son " + y + " yen(es).";
+        }
+        function libras(){
+            let l = (p*0.86).toFixed(2);
+            return answer = p + " euro(s) son " + l + " libra(s).";
+        }
+    </script>
+</body>
+
+</html>
